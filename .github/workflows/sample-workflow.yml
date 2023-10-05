@@ -1,0 +1,8 @@
+name: sample
+run-name: ${{ github.actor }} testing
+on: [push]
+jobs:
+  echo:
+    runs-on: self-hosted
+    steps:
+      - run: echo "successfully ran on the runner"
